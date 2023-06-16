@@ -1,0 +1,87 @@
+<!-- activity_role_selection.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#57CC99"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="270dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="33dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="Selamat datang di aplikasi Fundup!"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Sebelum mulai pilih dulu yuk role kamu apa?"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/investorButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
+
+    <Button
+        android:id="@+id/ceoButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableRight="@drawable/ic_ceo_icon"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="left|center_vertical"
+        android:text="Saya seorang CEO Startup Perluas visi dan jaringan Anda, untuk pimpin revolusi startup!"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/investorButton"
+        app:layout_constraintEnd_toEndOf="@+id/investorButton"
+        app:layout_constraintStart_toStartOf="@+id/investorButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/investorButton"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="183dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableRight="@drawable/ic_investor_icon"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="left|center_vertical"
+        android:text="Saya seorang Investor Buka potensi dan perluas investasi Anda bersama Fundup!"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ceoButton" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/titleTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_putih" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

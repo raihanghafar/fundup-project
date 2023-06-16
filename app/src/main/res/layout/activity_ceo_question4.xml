@@ -1,0 +1,95 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gradientSquare"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressBar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/progress_4" />
+
+    <TextView
+        android:id="@+id/questionIndustry"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Industri"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerIndustry"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar4" />
+
+    <TextView
+        android:id="@+id/descriptionIndustry"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="@font/poppins"
+        android:text="Berkembang di bidang industri apa perusahaan Anda?"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerIndustry"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/questionIndustry" />
+
+    <Spinner
+        android:id="@+id/spinnerIndustry"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/edittext_background"
+        android:entries="@array/industry_options"
+        app:layout_constraintEnd_toEndOf="@+id/questionIndustry"
+        app:layout_constraintStart_toStartOf="@+id/descriptionIndustry"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#3CA7A3"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Lanjut"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/previous_button_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

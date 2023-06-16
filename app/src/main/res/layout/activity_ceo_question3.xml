@@ -1,0 +1,129 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gradientSquare"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="239dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/progress_3" />
+
+    <TextView
+        android:id="@+id/questionTarget"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="59dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Target Perusahaan"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerTarget"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerTarget"
+        app:layout_constraintStart_toStartOf="@+id/descriptionTarget"
+        app:layout_constraintTop_toBottomOf="@+id/gradientSquare" />
+
+    <TextView
+        android:id="@+id/descriptionTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="Apa target dari perusaahan Anda?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionTarget" />
+
+    <Spinner
+        android:id="@+id/spinnerTarget"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:background="@drawable/edittext_background"
+        android:entries="@array/target_array"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionDevelopmental"
+        app:layout_constraintStart_toStartOf="@+id/descriptionTarget"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/questionDevelopmental"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginBottom="78dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Tingkat Perkembangan Startup"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDevelopmental"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionDevelopmental"
+        app:layout_constraintStart_toStartOf="@+id/descriptionDevelopmental"
+        app:layout_constraintTop_toTopOf="@+id/descriptionTarget" />
+
+    <TextView
+        android:id="@+id/descriptionDevelopmental"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="@font/poppins"
+        android:text="Sudah seberapa jauh perkembangan perusahaan anda?"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDevelopmental"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerDevelopmental"
+        app:layout_constraintStart_toStartOf="@+id/spinnerDevelopmental"
+        app:layout_constraintTop_toTopOf="@+id/questionDevelopmental" />
+
+    <Spinner
+        android:id="@+id/spinnerDevelopmental"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="212dp"
+        android:background="@drawable/edittext_background"
+        android:entries="@array/developmental_array"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#3CA7A3"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Lanjut"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/previous_button_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

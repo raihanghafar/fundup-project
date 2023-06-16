@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">FundUp</string>
+    <string name="default_web_client_id">535343842582-utf5i546kv36gq3lo7062ic58u8fqsj2.apps.googleusercontent.com</string>
+    <string name="splash_screen">FundUp</string>
+    <string-array name="target_array">
+        <item>Pilih</item>
+        <item>Business to Business (B2B)</item>
+        <item>Business to Consumers (B2C)</item>
+        <item>Consumer to Consumers (C2C)</item>
+        <item>Business to Government (B2G)</item>
+        <item>Government to Consumers (G2C)</item>
+        <item>Government to Business (G2B)</item>
+    </string-array>
+    <string-array name="developmental_array">
+        <item>Pilih</item>
+        <item>Pre-Startup/RnD</item>
+        <item>MVP/prototype</item>
+        <item>Early Customers and Iteration</item>
+        <item>Product Market Fit and Monetization</item>
+        <item>Growth</item>
+    </string-array>
+    <string-array name="industry_options">
+        <item>Pilih</item>
+        <item>E-commerce</item>
+        <item>Fintech</item>
+        <item>Transportasi dan Logistik</item>
+        <item>Pendidikan Online</item>
+        <item>Kesehatan Digital</item>
+        <item>Travel dan Pariwisata</item>
+        <item>Agroteknologi</item>
+        <item>Energi Terbarukan</item>
+        <item>Makanan dan Minuman</item>
+        <item>Kreatif dan Media digital</item>
+    </string-array>
+    <string-array name="investor_type_options">
+        <item>Pilih</item>
+        <item>Private Investor</item>
+        <item>Institutional Investor</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="investor_experience_options">
+        <item>Pilih</item>
+        <item>Belum pernah</item>
+        <item>1-3 Startup</item>
+        <item>4-6 Startup</item>
+        <item>7-10 Startup</item>
+        <item>Lebih dari 10 Startup</item>
+    </string-array>
+    <string-array name="investor_target_options">
+        <item>Pilih</item>
+        <item>Kurang dari 300 Juta Rupiah</item>
+        <item>300 Juta - 600 Juta Rupiah</item>
+        <item>600 Juta - 900 Juta Rupiah</item>
+        <item>Lebih dari 900 Juta Rupiah</item>
+        <item>Saya belum siap berinvestasi</item>
+    </string-array>
+    <string-array name="startup_type_options">
+        <item>Pilih</item>
+        <item>Startup yang memiliki dampak pada permasalahan di Indonesia</item>
+        <item>Startup yang memiliki dampak, namun tetap memperhatikan risk and return</item>
+        <item>Startup yang memiliki risk and return yang baik</item>
+    </string-array>
+    <string name="search">search</string>
+    <string name="chat">Chat</string>
+    <string name="akun">Akun</string>
+    <string name="home">Home</string>
+    <string name="searchT">Search</string>
+    <string name="start_up">fundup Start up</string>
+    <string name="description">merupakan start up bergerak dalam bidang investasi</string>
+    <string name="email">Joko@gmail.com</string>
+    <string name="growth">Meningkat atau tidak</string>
+    <string name="type">Tipe Investor</string>
+    <string name="nama">Joko</string>
+    <string name="distribusi">Digital</string>
+    <string name="jenis">private or Public</string>
+    <string name="pengalaman">Pengalaman Investor</string>
+    <string name="tlfon">No Telfon</string>
+    <string name="target">Target investor</string>
+    <string name="name_startup">Binar Academy</string>
+    <string name="industri">Bisnis</string>
+    <string name="target_startup">Target Perusahaan</string>
+    <string name="perkembangan">Tingkat Perkembangan</string>
+</resources>

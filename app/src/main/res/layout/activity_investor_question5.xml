@@ -1,0 +1,134 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-17dp">
+
+    <ImageView
+        android:id="@+id/gradientSquare"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressBar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="239dp"
+        android:layout_marginBottom="241dp"
+        app:layout_constraintBottom_toTopOf="@+id/termsCheckbox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/progress_5" />
+
+    <TextView
+        android:id="@+id/terms"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="55dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Syarat dan Ketentuan"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/descriptionTerms"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/progressBar5" />
+
+    <TextView
+        android:id="@+id/descriptionTerms"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="57dp"
+        android:fontFamily="@font/poppins"
+        android:text="Saya mengerti, mengetahui dan menyetujui bahwa aplikasi ini dibuat untuk membantu startup dan investor untuk saling berkolaborasi."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/descriptionTerms3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar5" />
+
+    <TextView
+        android:id="@+id/descriptionTerms2"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="67dp"
+        android:fontFamily="@font/poppins"
+        android:text="Saya memahami bahwa informasi yang mempresentasikan diri saya, berasal dari saya sendiri."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/termsCheckbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/descriptionTerms" />
+
+    <TextView
+        android:id="@+id/descriptionTerms3"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="241dp"
+        android:fontFamily="@font/poppins"
+        android:text="Saya mengerti dan mengkonfirmasi untuk mengetahui dan mempelajari setiap kesempatan sebelum akhirnya melakukan transaksi."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/termsCheckbox"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="21dp"
+        android:checked="false"
+        android:fontFamily="@font/poppins"
+        android:text="Saya sudah membaca dan menyetuji syarat diatas"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/descriptionTerms3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTerms3" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#3CA7A3"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Lanjut"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/previous_button_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

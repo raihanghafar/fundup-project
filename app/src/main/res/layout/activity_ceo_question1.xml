@@ -1,0 +1,160 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gradientSquare"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="239dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/progress_1" />
+
+    <TextView
+        android:id="@+id/questionCeoName"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="37dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Siapa nama lengkapmu?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ceoNameEditText"
+        app:layout_constraintEnd_toEndOf="@+id/questionCeoNik"
+        app:layout_constraintStart_toStartOf="@+id/ceoNameEditText"
+        app:layout_constraintTop_toTopOf="@+id/progressBar1" />
+
+    <TextView
+        android:id="@+id/questionCeoNik"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="316dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="No. Telepon"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionCeoEmail"
+        app:layout_constraintStart_toStartOf="@+id/ceoNikEditText" />
+
+    <TextView
+        android:id="@+id/questionCeoEmail"
+        android:layout_width="336dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="38dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Email"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ceoEmailEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionCeoNik" />
+
+    <EditText
+        android:id="@+id/ceoNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Nama lengkap (Gunakan nama sesuai KTP ya!)"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="8dp"
+        android:textColor="#6D6D6D"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/questionCeoNik"
+        app:layout_constraintEnd_toEndOf="@+id/ceoNikEditText"
+        app:layout_constraintStart_toStartOf="@+id/questionCeoNik"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar1" />
+
+    <EditText
+        android:id="@+id/ceoNikEditText"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Masukkan nomor telepon Anda"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="8dp"
+        android:textColor="#6D6D6D"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/questionCeoEmail"
+        app:layout_constraintEnd_toEndOf="@+id/ceoEmailEditText"
+        app:layout_constraintStart_toStartOf="@+id/questionCeoEmail"
+        app:layout_constraintTop_toBottomOf="@+id/ceoNameEditText" />
+
+    <EditText
+        android:id="@+id/ceoEmailEditText"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="185dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Email yang aktif digunakan"
+        android:inputType="text"
+        android:paddingStart="10dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="8dp"
+        android:textColor="#6D6D6D"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/questionCeoEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ceoNameEditText" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#3CA7A3"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Lanjut"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/previous_button_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

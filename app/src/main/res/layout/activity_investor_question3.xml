@@ -1,0 +1,102 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/gradientSquare"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/gradient_background"
+        app:layout_constraintBottom_toTopOf="@+id/progressBar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/progressBar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="239dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/progress_3" />
+
+    <TextView
+        android:id="@+id/investorTargetEditText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Berapakah nilai investasi yang Anda rencanakan untuk startup (estimasi 12 bulan)?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerInvestorTarget"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar3"
+        app:layout_constraintStart_toStartOf="@+id/spinnerInvestorTarget"
+        app:layout_constraintTop_toTopOf="@+id/progressBar3" />
+
+    <Spinner
+        android:id="@+id/spinnerInvestorTarget"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="282dp"
+        android:background="@drawable/edittext_background"
+        android:entries="@array/investor_target_options"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerStartupType"
+        app:layout_constraintStart_toStartOf="@+id/startupTypeEditText" />
+
+    <TextView
+        android:id="@+id/startupTypeEditText"
+        android:layout_width="339dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="191dp"
+        android:layout_marginBottom="191dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Jenis startup apa yang ingin Anda investasikan?"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spinnerStartupType"
+        app:layout_constraintTop_toTopOf="@+id/investorTargetEditText" />
+
+    <Spinner
+        android:id="@+id/spinnerStartupType"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="22dp"
+        android:background="@drawable/edittext_background"
+        android:entries="@array/startup_type_options"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startupTypeEditText" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#3CA7A3"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Lanjut"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/previous_button_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

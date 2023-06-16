@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/white_search"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="282dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/namaLengkapTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/nama"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailInvestorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/email"
+            android:textAppearance="@style/www_webinar" />
+
+        <TextView
+            android:id="@+id/nikInvestorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/tlfon"
+            android:textAppearance="@style/www_text"/>
+
+        <TextView
+            android:id="@+id/typeinves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/type"
+            android:textAppearance="@style/tingkat_per" />
+
+        <TextView
+            android:id="@+id/tipeInvestorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/jenis"
+            android:textAppearance="@style/www_webinar" />
+
+        <TextView
+            android:id="@+id/targetinves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/target"
+            android:textAppearance="@style/tingkat_per" />
+
+        <TextView
+            android:id="@+id/targetPerkembanganTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/growth"
+            android:textAppearance="@style/www_webinar" />
+
+        <TextView
+            android:id="@+id/pengalamanInves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/pengalaman"
+            android:textAppearance="@style/tingkat_per" />
+
+        <TextView
+            android:id="@+id/pengalamanInvestasiTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/pengalaman"
+            android:textAppearance="@style/www_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/kustimasi"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/targetIndustriTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digital"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textSize="10dp" /> <!-- Set the text color, e.g., white -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
