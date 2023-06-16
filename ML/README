@@ -1,1 +1,11 @@
+How does machine learning work at FundUp? In general, the task of machine learning at FundUp is to provide startup recommendations for an investor or vice versa. To achieve this, there are four steps involved in applying machine learning to this project.
 
+1. We retrieve startup and investor data from Firestore. To fetch data from Firestore, we need the data credentials that  available in the Firestore service account.
+
+2. We perform data pre-processing. We utilize the Tokenizer library in TensorFlow to convert each word in the startup and investor features into numeric values. These numeric values are then combined using pad sequences, which form an array.
+
+3. We transform the features in the startup and investor data into Tensor format. Afterward, we calculate the similarity between the two datasets using the Cosine Similarity method.
+
+4. We select the top 20 highest matches score  for each startup data or investor data and store them in the Firestore collection named "startup_matches" and "investor_matches."
+
+You might be wondering, where is the model training done? Let me clarify, at FundUp, we don't use a model to generate recommendations we use cosine similarity to find the similarity. All the code I explained will be packaged into a function and deployed to a Cloud Computing platform, where it will serve as the backend code.
